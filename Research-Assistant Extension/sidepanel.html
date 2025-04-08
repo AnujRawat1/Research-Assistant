@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="header">
+            <h1>Research Assistant</h1>
+        </div>
+
+        <div class="actions">
+            
+            <label for="operation" id="label-operation">Operation:</label>
+            <select name="operation" id="operation">
+                <option value="summarize" class="operation-option">Summarize </option>
+                <option value="paraphrase" class="operation-option">Paraphrase </option>
+                <option value="explain" class="operation-option">Explain </option>
+                <option value="translate" class="operation-option">Translate </option>
+                <option value="expand" class="operation-option">Expand </option>
+                <option value="simplify" class="operation-option">Simplify </option>
+                <option value="suggest" class="operation-option">Suggest </option>
+            </select>
+
+            <button id="summarizeBtn">Summarize</button>
+        </div>
+
+        <div class="notes">
+            <h2>Research Notes</h2>
+            <textarea name="notes" id="notes" placeholder="Take Notes Here"></textarea>
+            <button id="saveNotesBtn">Save Notes</button>
+        </div>
+
+        <div id="results"></div>
+
+    </div>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>
