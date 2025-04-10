@@ -101,6 +101,12 @@ public class ResearchService {
             case "suggest":
                 prompt.append("Based on the following content, suggest related topics and further reading. Format the response with clear headings and bullet points: \n\n");
                 break;
+            case "code":
+                prompt.append("Write a code snippet that performs the following task:\n\n");
+                break;
+            case "custom-prompt":
+                prompt.append("\n\n");
+                break;
             case "default":
                 throw new IllegalArgumentException("Invalid operation: " + researchEntity.getOperation());
         }

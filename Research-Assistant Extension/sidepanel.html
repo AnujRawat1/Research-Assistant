@@ -12,9 +12,11 @@
         <div class="header">
             <h1>Research Assistant</h1>
         </div>
+        
+        <textarea name="custom-prompt" id="custom-prompt" placeholder="Enter Content"></textarea>
 
         <div class="actions">
-            
+
             <label for="operation" id="label-operation">Operation:</label>
             <select name="operation" id="operation">
                 <option value="summarize" class="operation-option">Summarize </option>
@@ -24,18 +26,24 @@
                 <option value="expand" class="operation-option">Expand </option>
                 <option value="simplify" class="operation-option">Simplify </option>
                 <option value="suggest" class="operation-option">Suggest </option>
+                <option value="code" class="operation-option">Generate Code</option>
+                <option value="custom-prompt" class="operation-option">Custom Prompt</option>
             </select>
 
-            <button id="summarizeBtn">Summarize</button>
+            <button id="processBtn">Generate</button>
         </div>
 
         <div class="notes">
             <h2>Research Notes</h2>
             <textarea name="notes" id="notes" placeholder="Take Notes Here"></textarea>
             <button id="saveNotesBtn">Save Notes</button>
+            <button id="copyNotesBtn">Copy </button>
+            <button id="downloadNotesBtn">Download</button>
         </div>
 
-        <div id="results"></div>
+        <div id="results" >
+            
+        </div>
 
     </div>
 

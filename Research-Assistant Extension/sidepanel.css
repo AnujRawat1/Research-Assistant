@@ -21,8 +21,29 @@ body {
     text-shadow: 3px 3px 1px rgb(189, 199, 207);
 }
 
+h2 {
+    color: color-mix(in xyz-d65, rgb(0, 140, 255) 80%, rgb(255, 7, 255) 50%);
+}
 
+#custom-prompt{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: #0b0808;
+}
 
+#custom-prompt::placeholder {
+    font-weight: 550;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.7;
+}
 .actions {
     display: flex;
     align-items: center;
@@ -87,24 +108,38 @@ button:hover {
     border-radius: 4px;
     resize: vertical;
     margin-bottom: 10px;
+    font-size: large;
+}
+
+#notes::placeholder {
+    font-weight: 550;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.7;
 }
 
 #results {
-    padding: 10px;
-    background-color: #f8f9fa;
+    padding: 4px;
+    background-color: #eff6fd;
     border-radius: 4px;
     margin-top: 20px;
 }
 
 .result-item {
     background: white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .result-content {
     margin-bottom: 10px;
     line-height: 1.5;
+}
+
+.functionaity {
+    margin: 10px;
 }
